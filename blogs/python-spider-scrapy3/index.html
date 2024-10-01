@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/archives/"/>
+  
+  <link rel="canonical" href="http://example.com/blogs/python-spider-scrapy3/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,23 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>归档 - 清弦小站</title>
-  <meta name="keywords" content="null">
-  <meta desc name="description" content="BLOG - 庞宇轩 - 清弦小站">
+  <title>scrapy爬虫实战03-爬取其他文件格式 - 清弦小站</title>
+  <meta name="keywords" content="python,爬虫,scrapy,null">
+  <meta desc name="description" content="Scrapy框架爬虫实战03，是对zcool精选图片的爬取，并以标题为文件名进行分割存储。对Scrapy框架有一定的理解后，再阅读本篇博客为好。 - 庞宇轩 - 清弦小站">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="清弦小站">
-<meta property="og:url" content="http://example.com/archives/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="scrapy爬虫实战03-爬取其他文件格式">
+<meta property="og:url" content="http://example.com/blogs/python-spider-scrapy3/index.html">
 <meta property="og:site_name" content="清弦小站">
-<meta property="og:description" content="BLOG">
+<meta property="og:description" content="Scrapy框架爬虫实战03，是对zcool精选图片的爬取，并以标题为文件名进行分割存储。对Scrapy框架有一定的理解后，再阅读本篇博客为好。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2022-08-06T16:15:29.000Z">
+<meta property="article:modified_time" content="2022-08-06T16:18:39.000Z">
 <meta property="article:author" content="庞宇轩">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="爬虫">
+<meta property="article:tag" content="scrapy">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2633,7 +2638,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2711,754 +2716,347 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-	  <article id="arc" class="post article white-box reveal shadow floatable">
-			
-			
-				
-				
-					
-						
-						<h2>2023</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/how-to-create-a-prompt/">
-									<time>11-29</time>
-									
-										如何编写 ChatGPT 提示词
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/algorithm-c2-f/">
-									<time>10-29</time>
-									
-										菜鸟题解 ZOJ-1037 Gridland（未完待续）
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/algorithm-c2-e/">
-									<time>10-29</time>
-									
-										菜鸟题解 HDU-1045 Fire Net
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/algorithm-c2-d/">
-									<time>10-22</time>
-									
-										菜鸟题解 HDU-6882 Divide and Conquer
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/algorithm-c2-c/">
-									<time>10-22</time>
-									
-										菜鸟题解 HDU-1021 Fibonacci Again
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/algorithm-c2-b/">
-									<time>10-22</time>
-									
-										菜鸟题解 ZOJ-1239 Hanoi Tower Troubles Again!
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/algorithm-c2-a/">
-									<time>10-22</time>
-									
-										菜鸟题解 POJ-2299 Ultra-QuickSort
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/pseudocode/">
-									<time>10-07</time>
-									
-										伪代码编写规范参考
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/app-montaigne/">
-									<time>09-29</time>
-									
-										搭建可以用手机实时更新的简约个人站
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/mermaid/">
-									<time>09-25</time>
-									
-										通过代码优雅地编写图表——Mermaid语法
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/chrome-extensions-4/">
-									<time>09-25</time>
-									
-										Chrome浏览器插件推荐——XPath Helper
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/algorithm-c1-h/">
-									<time>09-19</time>
-									
-										菜鸟题解 POJ-3176 Cow Bowling
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/algorithm-c1-e/">
-									<time>09-19</time>
-									
-										菜鸟题解 POJ-1789 Truck History
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/algorithm-c1-d/">
-									<time>09-19</time>
-									
-										菜鸟题解 POJ-1328 Radar Installation
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/algorithm-c1-c/">
-									<time>09-19</time>
-									
-										菜鸟题解 POJ-1013 Counterfeit Dollar
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/algorithm-c1-b/">
-									<time>09-18</time>
-									
-										菜鸟题解 HDU-1050 Moving Tables
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/algorithm-c1-a/">
-									<time>09-18</time>
-									
-										菜鸟题解 POJ-3299 Humidex
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/chrome-extensions-3/">
-									<time>08-21</time>
-									
-										Chrome浏览器插件推荐——Adblock Plus
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/chrome-extensions-2/">
-									<time>08-20</time>
-									
-										Chrome浏览器插件推荐——浮图秀
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/chrome-extensions-1/">
-									<time>08-19</time>
-									
-										Chrome浏览器插件推荐——iTab新标签页
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/online-cv-2/">
-									<time>07-04</time>
-									
-										5分钟拥有你的个人主页/在线简历
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/bulid-your-chatgpt-on-vercel/">
-									<time>06-08</time>
-									
-										搭建你自己的ChatGPT应用！
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/volunteer-guide/">
-									<time>05-28</time>
-									
-										本科期间的志愿服务修炼手册
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/competition-guide/">
-									<time>05-26</time>
-									
-										本科期间的竞赛修炼手册
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/scientific-research-guide/">
-									<time>05-26</time>
-									
-										本科期间的科研修炼手册
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/python-spider-txt365kk/">
-									<time>05-21</time>
-									
-										python爬虫实战——小说爬取《我的师兄实在太稳健了》
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						
-						<h2>2022</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/entrance-exam-free-recommendation-2/">
-									<time>10-28</time>
-									
-										2022推免分享-外校篇
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/career-planning/">
-									<time>10-16</time>
-									
-										信通小白杨生涯规划
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/entrance-exam-free-recommendation-1/">
-									<time>09-30</time>
-									
-										2022推免分享——本校篇
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/rgb-hist/">
-									<time>09-22</time>
-									
-										RGB文件三通道分量熵计算
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/online-cv-1/">
-									<time>09-06</time>
-									
-										秋招&实习季，教你制作在线简历
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/python-spider-scrapy3/">
-									<time>08-07</time>
-									
-										scrapy爬虫实战03-爬取其他文件格式
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/python-spider-scrapy2/">
-									<time>08-07</time>
-									
-										scrapy爬虫实战02-CrawlSpider入门
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/python-spider-scrapy1/">
-									<time>08-07</time>
-									
-										Scrapy爬虫实战01-古诗文网
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/python-spider-demo1/">
-									<time>08-06</time>
-									
-										python爬虫实战演示
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/latex-toolbook/">
-									<time>08-06</time>
-									
-										常用LaTex公式及用法
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/pytorch-demo-1/">
-									<time>08-06</time>
-									
-										pytorch实现Minist手写数字识别
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/pytorch-demo-2/">
-									<time>08-06</time>
-									
-										pytorch实现线性回归
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/python-basic/">
-									<time>08-06</time>
-									
-										python快速入门
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/matlab-advance-1/">
-									<time>08-06</time>
-									
-										Matlab二维绘图
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/matlab-basic-5/">
-									<time>08-06</time>
-									
-										Matlab符号运算
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/matlab-basic-4/">
-									<time>08-06</time>
-									
-										Matlab矩阵
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/matlab-basic-3/">
-									<time>08-06</time>
-									
-										Matlab元胞与结构体
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/matlab-basic-2/">
-									<time>08-05</time>
-									
-										Matlab向量与多项式
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/matlab-basic-1/">
-									<time>08-05</time>
-									
-										Matlab基础知识
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/blogs/matlab-basic-0/">
-									<time>08-05</time>
-									
-										Matlab命令行
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-	  </article>
-	
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/blogs/python-spider-scrapy3/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="清弦小站">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="清弦小站">
+    <meta itemprop="description" content="BLOG">
+  </span>
+  
+
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        scrapy爬虫实战03-爬取其他文件格式
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://img-1306037672.cos.ap-beijing.myqcloud.com/avatar.jpeg" class="lazyload" data-srcset="https://img-1306037672.cos.ap-beijing.myqcloud.com/avatar.jpeg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">清弦.</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E7%88%AC%E8%99%AB/">爬虫</a><span class="sep"></span><a class="category-link" href="/categories/%E7%88%AC%E8%99%AB/%E5%AE%9E%E6%88%98/">实战</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E7%88%AC%E8%99%AB/" itemprop="url"><span itemprop="name">爬虫</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E7%88%AC%E8%99%AB/%E5%AE%9E%E6%88%98/" itemprop="url"><span itemprop="name">实战</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-08-07T00:15:29+08:00">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年8月7日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>本次实战中，我们以图片为例，演示使用Scrapy框架爬取非文本内容的方法。</p>
+<p>在前面两次的Scrapy框架爬虫实战中，已经对基础操作有了较为详细的解释说明，因此本次教程中的基础操作将不再过多赘述。</p>
+<p>目标网站：<a href="zcool.com.cn">传送门</a></p>
+<h2 id="爬虫编写"><a href="#爬虫编写" class="headerlink" title="爬虫编写"></a>爬虫编写</h2><p>我们以CrawlSpider为工具进行爬取。</p>
+<h3 id="创建CrawlSpider爬虫"><a href="#创建CrawlSpider爬虫" class="headerlink" title="创建CrawlSpider爬虫"></a>创建CrawlSpider爬虫</h3><p>在命令行中创建爬虫：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> zcool</span><br><span class="line">scrapy startproject zcool</span><br><span class="line"><span class="built_in">cd</span> zcool</span><br><span class="line">scrapy genspider -t crawl zcoolSpider https://www.zcool.com.cn/</span><br></pre></td></tr></table></figure>
+
+<h3 id="基础设置"><a href="#基础设置" class="headerlink" title="基础设置"></a>基础设置</h3><p>进行一些常规化的基础设置，后续使用Scrapy框架时可以按照这样的思路直接往下进行。</p>
+<h4 id="创建start-py"><a href="#创建start-py" class="headerlink" title="创建start.py"></a>创建<code>start.py</code></h4><p>创建<code>start.py</code>以实现在pycharm内运行Scrapy爬虫</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> scrapy <span class="keyword">import</span> cmdline</span><br><span class="line">cmdline.execute(<span class="string">&quot;scrapy crawl zcoolSpider&quot;</span>.split(<span class="string">&quot; &quot;</span>))</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="关闭协议、设置ua"><a href="#关闭协议、设置ua" class="headerlink" title="关闭协议、设置ua"></a>关闭协议、设置ua</h4><p>在<code>settings.py</code>中关闭那个君子协议，然后设置好自己的user-agent</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">BOT_NAME = <span class="string">&#x27;zcool&#x27;</span></span><br><span class="line"></span><br><span class="line">SPIDER_MODULES = [<span class="string">&#x27;zcool.spiders&#x27;</span>]</span><br><span class="line">NEWSPIDER_MODULE = <span class="string">&#x27;zcool.spiders&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Obey robots.txt rules</span></span><br><span class="line">ROBOTSTXT_OBEY = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Override the default request headers:</span></span><br><span class="line">DEFAULT_REQUEST_HEADERS = &#123;</span><br><span class="line">    <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Accept-Language&#x27;</span>: <span class="string">&#x27;en&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;User-Agent&#x27;</span> : <span class="string">&#x27;我的user-agent&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="设置初始页面"><a href="#设置初始页面" class="headerlink" title="设置初始页面"></a>设置初始页面</h4><p>设置一下<code>zcoolSpider.py</code>（就是爬虫文件）里的<code>start_urls</code>，本次实战中我们爬取的是“精选部分”，页面链接在这：<a target="_blank" rel="noopener" href="https://www.zcool.com.cn/discover/0!3!0!0!0!!!!1!1!1">传送门</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&#x27;zcoolSpider&#x27;</span></span><br><span class="line">    allowed_domains = [<span class="string">&#x27;zcool.com.cn&#x27;</span>]</span><br><span class="line">    start_urls = [<span class="string">&#x27;https://www.zcool.com.cn/discover/0!3!0!0!0!!!!1!1!1&#x27;</span>]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="编写灵魂——rules规则"><a href="#编写灵魂——rules规则" class="headerlink" title="编写灵魂——rules规则"></a>编写灵魂——rules规则</h3><h4 id="页码对应url"><a href="#页码对应url" class="headerlink" title="页码对应url"></a>页码对应url</h4><p>不难找到不同页码对应链接的规律：</p>
+<img src="https://img-blog.csdnimg.cn/20210205223112401.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3B5eDI0NjYwNzk1NjU=,size_16,color_FFFFFF,t_70" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210205223112401.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3B5eDI0NjYwNzk1NjU=,size_16,color_FFFFFF,t_70" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="在这里插入图片描述" style="zoom:40%;" />
+
+
+<p>均为<code>https://www.zcool.com.cn/discover/0!3!0!0!0!!!!1!1!</code>+<code>页码</code>的形式</p>
+<p>规则（正则表达式）应该这样写：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Rule(LinkExtractor(allow=<span class="string">r&#x27;.+0!3!0!0!0!!!!1!1!\d+&#x27;</span>),follow=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="详情页"><a href="#详情页" class="headerlink" title="详情页"></a>详情页</h4><img src="https://img-blog.csdnimg.cn/20210205223125547.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210205223125547.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="在这里插入图片描述" style="zoom:50%;" />
+
+
+
+<p>详情页的规则也很明显，均为<code>https://www.zcool.com.cn/work/</code>+<code>一串字母</code>+<code>=.html</code></p>
+<p>规则（正则表达式）应该这样写：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Rule(LinkExtractor(allow=<span class="string">r&#x27;.+work/.+html&#x27;</span>),follow=<span class="literal">False</span>,callback=<span class="string">&quot;parse_detail&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="数据解析与存储"><a href="#数据解析与存储" class="headerlink" title="数据解析与存储"></a>数据解析与存储</h3><p>上面已经写好了rules，使crawlSpider有了自己找到每一个详情页的能力，接下来我们就处理这些详情页。</p>
+<h4 id="编写回调函数parse-details"><a href="#编写回调函数parse-details" class="headerlink" title="编写回调函数parse_details"></a>编写回调函数<code>parse_details</code></h4><p>由于每个详情页里都有很多张图，所以我们期望把每一页里的图放在同一个文件夹里，然后以那一页的标题为文件名，这样便于我们以后查看。因此，在回调函数中，我们需要获取的内容主要有两个：标题和图片链接</p>
+<h5 id="获取标题"><a href="#获取标题" class="headerlink" title="获取标题"></a>获取标题</h5><img src="https://img-blog.csdnimg.cn/20210205223139198.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3B5eDI0NjYwNzk1NjU=,size_16,color_FFFFFF,t_70" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210205223139198.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3B5eDI0NjYwNzk1NjU=,size_16,color_FFFFFF,t_70" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="在这里插入图片描述" style="zoom:50%;" />
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">title = response.xpath(<span class="string">&quot;//div[@class=&#x27;details-contitle-box&#x27;]/h2/text()&quot;</span>).getall() <span class="comment"># getall返回列表</span></span><br><span class="line">title = <span class="string">&quot;&quot;</span>.join(title).strip() <span class="comment"># 用于将列表拼接并删掉首尾的空格</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="获取图片url"><a href="#获取图片url" class="headerlink" title="获取图片url"></a>获取图片url</h5><img src="https://img-blog.csdnimg.cn/20210205223150251.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20210205223150251.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="在这里插入图片描述" style="zoom:50%;" />
+
+
+<p>利用<code>div</code>标签的<code>class</code>属性，定位图片的链接</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">image_urls = response.xpath(<span class="string">&quot;//div[@class=&#x27;photo-information-content&#x27;]/img/@src&quot;</span>).getall()</span><br></pre></td></tr></table></figure>
+
+<p><strong>ps.</strong> 我们可以在插件XPath Helper中验证自己找的xpath路径是否正确，如图：</p>
+<img src="https://img-blog.csdnimg.cn/2021020522322120.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3B5eDI0NjYwNzk1NjU=,size_16,color_FFFFFF,t_70" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/2021020522322120.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3B5eDI0NjYwNzk1NjU=,size_16,color_FFFFFF,t_70" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="在这里插入图片描述" style="zoom:30%;" />
+
+<p>的确是可以成功获取url</p>
+<hr>
+<h4 id="编写items-py"><a href="#编写items-py" class="headerlink" title="编写items.py"></a>编写<code>items.py</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ZcoolItem</span>(scrapy.Item):</span><br><span class="line">    title = scrapy.Field() <span class="comment"># 标题</span></span><br><span class="line">    image_urls = scrapy.Field() <span class="comment"># 图片链接</span></span><br><span class="line">    images = scrapy.Field() <span class="comment"># 图片本身</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="在zcoolSpider-py中调用items-py"><a href="#在zcoolSpider-py中调用items-py" class="headerlink" title="在zcoolSpider.py中调用items.py"></a>在<code>zcoolSpider.py</code>中调用<code>items.py</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> ..items <span class="keyword">import</span> ZcoolItem</span><br><span class="line">...</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ZcoolspiderSpider</span>(<span class="title class_ inherited__">CrawlSpider</span>):</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">parse_detail</span>(<span class="params">self, response</span>):</span><br><span class="line">        ...</span><br><span class="line">        item = ZcoolItem(title=title,image_urls=image_urls)</span><br><span class="line">        <span class="keyword">return</span> item</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="在setting-py中打开piplines，并编写文件存储路径"><a href="#在setting-py中打开piplines，并编写文件存储路径" class="headerlink" title="在setting.py中打开piplines，并编写文件存储路径"></a>在<code>setting.py</code>中打开<code>piplines</code>，并编写文件存储路径</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line">IMAGES_STORE = os.path.join(os.path.dirname(os.path.dirname(__file__)),<span class="string">&#x27;images&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Configure item pipelines</span></span><br><span class="line"><span class="comment"># See https://docs.scrapy.org/en/latest/topics/item-pipeline.html</span></span><br><span class="line">ITEM_PIPELINES = &#123;</span><br><span class="line">     <span class="string">&#x27;zcool.pipelines.ZcoolPipeline&#x27;</span>: <span class="number">300</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中<code>os.path.dirname</code>的作用是<strong>获取上层文件夹路径</strong>，<code>__file__</code>就是只这个<strong>文件本身</strong>，<code>os.path.join</code>则实现了<strong>将路径拼接</strong>的作用。</p>
+<hr>
+<h4 id="编写piplines-py"><a href="#编写piplines-py" class="headerlink" title="编写piplines.py"></a>编写<code>piplines.py</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> scrapy.pipelines.images <span class="keyword">import</span> ImagesPipeline</span><br><span class="line"><span class="keyword">from</span> zcool <span class="keyword">import</span> settings <span class="comment"># 这是想调用settings.py里写的IMAGE_STORE</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> re <span class="comment"># 正则表达式库</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ZcoolPipeline</span>(<span class="title class_ inherited__">ImagesPipeline</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">get_media_requests</span>(<span class="params">self, item, info</span>):</span><br><span class="line">        media_requests = <span class="built_in">super</span>(ZcoolPipeline, <span class="variable language_">self</span>).get_media_requests(item,info)</span><br><span class="line">        <span class="keyword">for</span> media_request <span class="keyword">in</span> media_requests:</span><br><span class="line">            media_request.item = item</span><br><span class="line">        <span class="keyword">return</span> media_requests</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">file_path</span>(<span class="params">self, request, response=<span class="literal">None</span>, info=<span class="literal">None</span>, *, item=<span class="literal">None</span></span>):</span><br><span class="line">        origin_path = <span class="built_in">super</span>(ZcoolPipeline, <span class="variable language_">self</span>).file_path(request, response, info) <span class="comment"># 先执行一遍原函数</span></span><br><span class="line">        title = request.item[<span class="string">&#x27;title&#x27;</span>]</span><br><span class="line">        title = re.sub(<span class="string">r&#x27;[\\/:\*\?&quot;&lt;&gt;\|]&#x27;</span>,<span class="string">&quot;&quot;</span>,title) <span class="comment"># 删除非法字符</span></span><br><span class="line">        save_path = os.path.join(settings.IMAGES_STORE,title)</span><br><span class="line">        image_name = origin_path.replace(<span class="string">&quot;full/&quot;</span>,<span class="string">&quot;&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> os.path.join(save_path,image_name)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>注意到上面的<code>title = re.sub(r&#39;[\\/:\*\?&quot;&lt;&gt;\|]&#39;,&quot;&quot;,title)</code>一句中，因为我们想用详情页的标题作为文件夹名，但文件夹名中不可以出现这些字符：<code>\</code> <code>/</code> <code>:</code> <code>*</code> <code>?</code> <code>&quot;</code> <code>&lt;</code> <code>&gt;</code> <code>|</code>，因此我们要用正则表达式的方法，把标题中的这些字符删除。</p>
+<p>至此，我们编写完了本次实战的爬虫，运行可得结果如下：</p>
+<img src="https://img-1306037672.cos.ap-beijing.myqcloud.com/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3B5eDI0NjYwNzk1NjU=,size_16,color_FFFFFF,t_70-20220807001821275.png" class="lazyload" data-srcset="https://img-1306037672.cos.ap-beijing.myqcloud.com/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3B5eDI0NjYwNzk1NjU=,size_16,color_FFFFFF,t_70-20220807001821275.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" style="zoom:50%;" />
+
+<hr>
+<h2 id="最终代码参考："><a href="#最终代码参考：" class="headerlink" title="最终代码参考："></a>最终代码参考：</h2><h3 id="zcoolSpider-py"><a href="#zcoolSpider-py" class="headerlink" title="zcoolSpider.py"></a><code>zcoolSpider.py</code></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="keyword">from</span> scrapy.linkextractors <span class="keyword">import</span> LinkExtractor</span><br><span class="line"><span class="keyword">from</span> scrapy.spiders <span class="keyword">import</span> CrawlSpider, Rule</span><br><span class="line"><span class="keyword">from</span> ..items <span class="keyword">import</span> ZcoolItem</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ZcoolspiderSpider</span>(<span class="title class_ inherited__">CrawlSpider</span>):</span><br><span class="line">    name = <span class="string">&#x27;zcoolSpider&#x27;</span></span><br><span class="line">    allowed_domains = [<span class="string">&#x27;zcool.com.cn&#x27;</span>]</span><br><span class="line">    start_urls = [<span class="string">&#x27;https://www.zcool.com.cn/discover/0!3!0!0!0!!!!1!1!1&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    rules = (</span><br><span class="line">        Rule(LinkExtractor(allow=<span class="string">r&#x27;.+0!3!0!0!0!!!!1!1!\d+&#x27;</span>),follow=<span class="literal">True</span>),</span><br><span class="line">        Rule(LinkExtractor(allow=<span class="string">r&#x27;.+work/.+html&#x27;</span>),follow=<span class="literal">False</span>,callback=<span class="string">&quot;parse_detail&quot;</span>)</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">parse_detail</span>(<span class="params">self, response</span>):</span><br><span class="line">        image_urls = response.xpath(<span class="string">&quot;//div[@class=&#x27;photo-information-content&#x27;]/img/@src&quot;</span>).getall()</span><br><span class="line">        title = response.xpath(<span class="string">&quot;//div[@class=&#x27;details-contitle-box&#x27;]/h2/text()&quot;</span>).getall()</span><br><span class="line">        title = <span class="string">&quot;&quot;</span>.join(title).strip()</span><br><span class="line">        item = ZcoolItem(title=title,image_urls=image_urls)</span><br><span class="line">        <span class="keyword">return</span> item</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="items-py"><a href="#items-py" class="headerlink" title="items.py"></a><code>items.py</code></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ZcoolItem</span>(scrapy.Item):</span><br><span class="line">    title = scrapy.Field()</span><br><span class="line">    image_urls = scrapy.Field()</span><br><span class="line">    images = scrapy.Field()</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="piplines-py"><a href="#piplines-py" class="headerlink" title="piplines.py"></a><code>piplines.py</code></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> scrapy.pipelines.images <span class="keyword">import</span> ImagesPipeline</span><br><span class="line"><span class="keyword">from</span> zcool <span class="keyword">import</span> settings</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ZcoolPipeline</span>(<span class="title class_ inherited__">ImagesPipeline</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">get_media_requests</span>(<span class="params">self, item, info</span>):</span><br><span class="line">        media_requests = <span class="built_in">super</span>(ZcoolPipeline, <span class="variable language_">self</span>).get_media_requests(item,info)</span><br><span class="line">        <span class="keyword">for</span> media_request <span class="keyword">in</span> media_requests:</span><br><span class="line">            media_request.item = item</span><br><span class="line">        <span class="keyword">return</span> media_requests</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">file_path</span>(<span class="params">self, request, response=<span class="literal">None</span>, info=<span class="literal">None</span>, *, item=<span class="literal">None</span></span>):</span><br><span class="line">        origin_path = <span class="built_in">super</span>(ZcoolPipeline, <span class="variable language_">self</span>).file_path(request, response, info) <span class="comment"># 先执行一遍原函数</span></span><br><span class="line">        title = request.item[<span class="string">&#x27;title&#x27;</span>]</span><br><span class="line">        title = re.sub(<span class="string">r&#x27;[\\/:\*\?&quot;&lt;&gt;\|]&#x27;</span>,<span class="string">&quot;&quot;</span>,title)</span><br><span class="line">        save_path = os.path.join(settings.IMAGES_STORE,title)</span><br><span class="line">        image_name = origin_path.replace(<span class="string">&quot;full/&quot;</span>,<span class="string">&quot;&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> os.path.join(save_path,image_name)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="settings-py"><a href="#settings-py" class="headerlink" title="settings.py"></a><code>settings.py</code></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">BOT_NAME = <span class="string">&#x27;zcool&#x27;</span></span><br><span class="line"></span><br><span class="line">SPIDER_MODULES = [<span class="string">&#x27;zcool.spiders&#x27;</span>]</span><br><span class="line">NEWSPIDER_MODULE = <span class="string">&#x27;zcool.spiders&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Obey robots.txt rules</span></span><br><span class="line">ROBOTSTXT_OBEY = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Override the default request headers:</span></span><br><span class="line">DEFAULT_REQUEST_HEADERS = &#123;</span><br><span class="line">    <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Accept-Language&#x27;</span>: <span class="string">&#x27;en&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;User-Agent&#x27;</span> : <span class="string">&#x27;我的user-agent&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Configure item pipelines</span></span><br><span class="line"><span class="comment"># See https://docs.scrapy.org/en/latest/topics/item-pipeline.html</span></span><br><span class="line">ITEM_PIPELINES = &#123;</span><br><span class="line">     <span class="string">&#x27;zcool.pipelines.ZcoolPipeline&#x27;</span>: <span class="number">300</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">IMAGES_STORE = os.path.join(os.path.dirname(os.path.dirname(__file__)),<span class="string">&#x27;images&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+        
+          <div class='copyright'>
+            <blockquote>
+              
+                
+                  <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+                
+              
+                
+                  <p>本文永久链接是：<a href="http://example.com/blogs/python-spider-scrapy3/">http://example.com/blogs/python-spider-scrapy3/</a></p>
+                
+              
+            </blockquote>
+          </div>
+        
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-07T00:18:39+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年8月7日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/python/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>python</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%88%AC%E8%99%AB/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>爬虫</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/scrapy/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>scrapy</p></a></div>
+  <span hidden itemprop="keywords">python 爬虫 scrapy</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/blogs/python-spider-scrapy3/&title=scrapy爬虫实战03-爬取其他文件格式 - 清弦小站&summary="
+          
+          >
+          
+            <img src="https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/blogs/python-spider-scrapy3/&title=scrapy爬虫实战03-爬取其他文件格式 - 清弦小站&summary="
+          
+          >
+          
+            <img src="https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/blogs/python-spider-scrapy3/&title=scrapy爬虫实战03-爬取其他文件格式 - 清弦小站&summary="
+          
+          >
+          
+            <img src="https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAAC/klEQVR42u3aQZLiMBAEQP7/6ZkH7BJWVzeEe5y6YZAsJ5eKkl8/xn/HCwEYMGDAgAGzBuYVjn8WLP6+ev9389L13q0PBgwYMGDAgNkHcxyADjdUXecUsLvO5XwwYMCAAQMGzFqYywB0+Pur+dUHrQbG+HnAgAEDBgwYMI+DqQazbwc+MGDAgAEDBgyY0wd4DY1q0AMDBgwYMGDAPBcmDWLVQqsaBKcC59dOIsGAAQMGDBgwX4PpBq+7fY6fBwwYMGDAgAGzBqY7TgukbiA7/WPazwMGDBgwYMCAWQOTBqSpomkKrLt/MGDAgAEDBsw+mOmglB60dQuy0+vlogoMGDBgwIABc1uYqxtXg1d1Y90/KD0QfHt/MGDAgAEDBswamE8ddKUbnLqeFldgwIABAwYMmH0waUGUHqRNB77T+1yuAwYMGDBgwIBZA5NubAqoGiy7EO0DNzBgwIABAwbMbWFOF5y6PgU6VmyBAQMGDBgwYNbBVAui9IArLaDSP+x0HTBgwIABAwbMfpi04JmGS9ctQ1wVVWDAgAEDBgyY28NMH7yl8z914HYcPMGAAQMGDBgwa2DSgqpaSKXBLi240uAHBgwYMGDAgNkD0w121aKpW2R1X2wCAwYMGDBgwPwdmOnC6dNB7lNgYMCAAQMGDJh9MNWiKYWbDmTd+7dfHAIDBgwYMGDA3AZmOlhVC62pwqtbrIEBAwYMGDBg9sNMP3D14G2qAAMDBgwYMGDAPAcmLZKq86vrVefH64EBAwYMGDBg1sB0Rxq0ugVYGiAvP4MBAwYMGDBg1sC8wpEefJ1+Xw2aKcRlUQUGDBgwYMCAuT1MNdB1AboHZd1iK27wwIABAwYMGDC3hbm68VSgmp5XBXx7HQwYMGDAgAHzWJg04KXFWPUFp8t5YMCAAQMGDJjHwaQbS4ur6n7aB25gwIABAwYMmNvDVDd2+qLPKfz0QVt5HhgwYMCAAQNmHUz34OoUqBoQU7A06IEBAwYMGDBg9sAYYMCAAQMGDJhl4xdblOQd5sOtTQAAAABJRU5ErkJggg==">
+          </div>
+        </div>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/blogs/online-cv-1/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>秋招&实习季，教你制作在线简历</p>
+          <p class='content'>这篇教程教你制作的简历本质上是部署在Gitee上，依赖Gitee Pages服务的静态页面，制作它需要的知识仅包括前端三件套，即HTML、CSS和Javascript。当然，即使你没有任何基础，...</p>
+        </a>
+      
+      
+        <a class='next' href='/blogs/python-spider-scrapy2/'>
+          <p class='title'>scrapy爬虫实战02-CrawlSpider入门<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>目标网站：传送门
+CrawlSpider爬虫的创建为什么要有CrawlSpider爬虫spider是Scrapy框架中的基础爬虫，在翻页的时候，我们是这样操作的：
+123456# 获取下一页ne...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/blogs/python-spider-scrapy3/index.html#comments">
+    </span>
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3492,6 +3090,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 </section>
 
+    
+  
+
+  
+    
+    
+      
     
   
 
@@ -3560,171 +3165,41 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fas fa-align-left fa-fw" aria-hidden="true"></i><span class='name'>专栏</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Matlab/" href="/categories/Matlab/"
-            active-action="action-categoriesMatlab"
-            ><div class='name'>Matlab</div><div class='badge'>(7)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Matlab/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" href="/categories/Matlab/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"
-            active-action="action-categoriesMatlabE59FBAE7A180E69599E7A88B"
-            ><div class='name'>基础教程</div><div class='badge'>(6)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Matlab/%E8%BF%9B%E9%98%B6%E6%95%99%E7%A8%8B/" href="/categories/Matlab/%E8%BF%9B%E9%98%B6%E6%95%99%E7%A8%8B/"
-            active-action="action-categoriesMatlabE8BF9BE998B6E69599E7A88B"
-            ><div class='name'>进阶教程</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/python/" href="/categories/python/"
-            active-action="action-categoriespython"
-            ><div class='name'>python</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/python/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" href="/categories/python/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"
-            active-action="action-categoriespythonE59FBAE7A180E69599E7A88B"
-            ><div class='name'>基础教程</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%88%86%E4%BA%AB/" href="/categories/%E5%88%86%E4%BA%AB/"
-            active-action="action-categoriesE58886E4BAAB"
-            ><div class='name'>分享</div><div class='badge'>(15)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%88%86%E4%BA%AB/%E6%8E%A8%E5%85%8D/" href="/categories/%E5%88%86%E4%BA%AB/%E6%8E%A8%E5%85%8D/"
-            active-action="action-categoriesE58886E4BAABE68EA8E5858D"
-            ><div class='name'>推免</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%88%86%E4%BA%AB/%E6%97%A5%E5%B8%B8/" href="/categories/%E5%88%86%E4%BA%AB/%E6%97%A5%E5%B8%B8/"
-            active-action="action-categoriesE58886E4BAABE697A5E5B8B8"
-            ><div class='name'>日常</div><div class='badge'>(9)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%88%86%E4%BA%AB/%E7%94%9F%E6%B6%AF/" href="/categories/%E5%88%86%E4%BA%AB/%E7%94%9F%E6%B6%AF/"
-            active-action="action-categoriesE58886E4BAABE7949FE6B6AF"
-            ><div class='name'>生涯</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9/" href="/categories/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9/"
-            active-action="action-categoriesE695B0E68DAEE58E8BE7BCA9"
-            ><div class='name'>数据压缩</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"
-            active-action="action-categoriesE6B7B1E5BAA6E5ADA6E4B9A0"
-            ><div class='name'>深度学习</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%AE%9E%E6%88%98demo/" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%AE%9E%E6%88%98demo/"
-            active-action="action-categoriesE6B7B1E5BAA6E5ADA6E4B9A0E5AE9EE68898demo"
-            ><div class='name'>实战demo</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%88%AC%E8%99%AB/" href="/categories/%E7%88%AC%E8%99%AB/"
-            active-action="action-categoriesE788ACE899AB"
-            ><div class='name'>爬虫</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E7%88%AC%E8%99%AB/%E5%AE%9E%E6%88%98/" href="/categories/%E7%88%AC%E8%99%AB/%E5%AE%9E%E6%88%98/"
-            active-action="action-categoriesE788ACE899ABE5AE9EE68898"
-            ><div class='name'>实战</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%AE%97%E6%B3%95/" href="/categories/%E7%AE%97%E6%B3%95/"
-            active-action="action-categoriesE7AE97E6B395"
-            ><div class='name'>算法</div><div class='badge'>(12)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E7%AE%97%E6%B3%95/%E5%88%86%E6%B2%BB/" href="/categories/%E7%AE%97%E6%B3%95/%E5%88%86%E6%B2%BB/"
-            active-action="action-categoriesE7AE97E6B395E58886E6B2BB"
-            ><div class='name'>分治</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" href="/categories/%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"
-            active-action="action-categoriesE7AE97E6B395E58AA8E68081E8A784E58892"
-            ><div class='name'>动态规划</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80/" href="/categories/%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80/"
-            active-action="action-categoriesE7AE97E6B395E59FBAE7A180"
-            ><div class='name'>基础</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E7%AE%97%E6%B3%95/%E6%80%9D%E7%BB%B4/" href="/categories/%E7%AE%97%E6%B3%95/%E6%80%9D%E7%BB%B4/"
-            active-action="action-categoriesE7AE97E6B395E6809DE7BBB4"
-            ><div class='name'>思维</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E7%AE%97%E6%B3%95/%E6%90%9C%E7%B4%A2/" href="/categories/%E7%AE%97%E6%B3%95/%E6%90%9C%E7%B4%A2/"
-            active-action="action-categoriesE7AE97E6B395E6909CE7B4A2"
-            ><div class='name'>搜索</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E7%AE%97%E6%B3%95/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/" href="/categories/%E7%AE%97%E6%B3%95/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"
-            active-action="action-categoriesE7AE97E6B395E69C80E5B08FE7949FE68890E6A091"
-            ><div class='name'>最小生成树</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E7%AE%97%E6%B3%95/%E8%B4%AA%E5%BF%83/" href="/categories/%E7%AE%97%E6%B3%95/%E8%B4%AA%E5%BF%83/"
-            active-action="action-categoriesE7AE97E6B395E8B4AAE5BF83"
-            ><div class='name'>贪心</div><div class='badge'>(2)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Matlab/" style="font-size: 21.14px; color: #686868">Matlab</a> <a href="/tags/PyTorch/" style="font-size: 15.43px; color: #8f8f8f">PyTorch</a> <a href="/tags/markdown/" style="font-size: 15.43px; color: #8f8f8f">markdown</a> <a href="/tags/matplotlib/" style="font-size: 14px; color: #999">matplotlib</a> <a href="/tags/numpy/" style="font-size: 14px; color: #999">numpy</a> <a href="/tags/python/" style="font-size: 22.57px; color: #5f5f5f">python</a> <a href="/tags/scrapy/" style="font-size: 16.86px; color: #868686">scrapy</a> <a href="/tags/tips/" style="font-size: 19.71px; color: #727272">tips</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 18.29px; color: #7c7c7c">前端</a> <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="font-size: 15.43px; color: #8f8f8f">深度学习</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 19.71px; color: #727272">爬虫</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 24px; color: #555">算法</a>
-    </div>
-  </section>
-
-
-    
-  
-
 
 <div class="widget-sticky pjax">
+
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%88%AC%E8%99%AB%E7%BC%96%E5%86%99"><span class="toc-text">爬虫编写</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BACrawlSpider%E7%88%AC%E8%99%AB"><span class="toc-text">创建CrawlSpider爬虫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE"><span class="toc-text">基础设置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAstart-py"><span class="toc-text">创建start.py</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%97%AD%E5%8D%8F%E8%AE%AE%E3%80%81%E8%AE%BE%E7%BD%AEua"><span class="toc-text">关闭协议、设置ua</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%88%9D%E5%A7%8B%E9%A1%B5%E9%9D%A2"><span class="toc-text">设置初始页面</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E5%86%99%E7%81%B5%E9%AD%82%E2%80%94%E2%80%94rules%E8%A7%84%E5%88%99"><span class="toc-text">编写灵魂——rules规则</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A1%B5%E7%A0%81%E5%AF%B9%E5%BA%94url"><span class="toc-text">页码对应url</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%A6%E6%83%85%E9%A1%B5"><span class="toc-text">详情页</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%E4%B8%8E%E5%AD%98%E5%82%A8"><span class="toc-text">数据解析与存储</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%96%E5%86%99%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0parse-details"><span class="toc-text">编写回调函数parse_details</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%A0%87%E9%A2%98"><span class="toc-text">获取标题</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%9B%BE%E7%89%87url"><span class="toc-text">获取图片url</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%96%E5%86%99items-py"><span class="toc-text">编写items.py</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8zcoolSpider-py%E4%B8%AD%E8%B0%83%E7%94%A8items-py"><span class="toc-text">在zcoolSpider.py中调用items.py</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8setting-py%E4%B8%AD%E6%89%93%E5%BC%80piplines%EF%BC%8C%E5%B9%B6%E7%BC%96%E5%86%99%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8%E8%B7%AF%E5%BE%84"><span class="toc-text">在setting.py中打开piplines，并编写文件存储路径</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%96%E5%86%99piplines-py"><span class="toc-text">编写piplines.py</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E7%BB%88%E4%BB%A3%E7%A0%81%E5%8F%82%E8%80%83%EF%BC%9A"><span class="toc-text">最终代码参考：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#zcoolSpider-py"><span class="toc-text">zcoolSpider.py</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#items-py"><span class="toc-text">items.py</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#piplines-py"><span class="toc-text">piplines.py</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#settings-py"><span class="toc-text">settings.py</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+  
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3752,13 +3227,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -4668,7 +4144,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"清弦小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"庞宇轩","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"BLOG"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"清弦小站"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/archives/","name":"Archive"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"清弦小站","url":"http://example.com/","keywords":null,"description":"BLOG","author":{"@type":"Person","name":"庞宇轩","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"BLOG"},"publisher":{"@type":"Organization","name":"清弦小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"BLOG","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"庞宇轩","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"清弦小站","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"清弦小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"庞宇轩","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"BLOG"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"清弦小站"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/爬虫/","name":"爬虫"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/爬虫/实战/","name":"实战"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/blogs/python-spider-scrapy3/","name":"scrapy爬虫实战03-爬取其他文件格式"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"清弦小站","url":"http://example.com/","keywords":null,"description":"BLOG","author":{"@type":"Person","name":"庞宇轩","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"BLOG"},"publisher":{"@type":"Organization","name":"清弦小站","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"scrapy爬虫实战03-爬取其他文件格式","description":"Scrapy框架爬虫实战03，是对zcool精选图片的爬取，并以标题为文件名进行分割存储。对Scrapy框架有一定的理解后，再阅读本篇博客为好。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/blogs/python-spider-scrapy3/"},"author":{"@type":"Person","name":"庞宇轩","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"清弦小站","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/blogs/python-spider-scrapy3/","wordCount":0,"datePublished":"2022-08-06T16:15:29.000Z","dateModified":"2022-08-06T16:18:39.000Z","articleSection":"爬虫","keywords":"python,爬虫,scrapy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
