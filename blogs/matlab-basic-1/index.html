@@ -1761,7 +1761,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1727778830468),
+    lastupdate: new Date(1728553375314),
     sidebar: {
       for_page: ["blogger","feedback","category","tagcloud"],
       for_post: ["blogger","toc","feedback"],
@@ -2182,7 +2182,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <!-- Custom Files headEnd end-->
   <!-- front-matter head_end begin -->
   <!-- front-matter head_end end -->
-</head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://unpkg.com/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://unpkg.com/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <!-- import body_begin begin-->
     <!-- import body_begin end-->
@@ -2799,50 +2803,49 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="post-body" itemprop="articleBody">
     <p>Matlab系列基础教程1-基础知识，包括Matlab中的常量、数据类型、运算符、复数与三角函数的基本用法。</p>
 <span id="more"></span>
-
-
-
-
-
-<h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><table>
+<h2 id="常量"><a class="markdownIt-Anchor" href="#常量"></a> 常量</h2>
+<table>
 <thead>
 <tr>
-<th align="center">常量名称</th>
-<th align="center">对应含义</th>
+<th style="text-align:center">常量名称</th>
+<th style="text-align:center">对应含义</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center"><code>pi</code></td>
-<td align="center">圆周率</td>
+<tbody>
+<tr>
+<td style="text-align:center"><code>pi</code></td>
+<td style="text-align:center">圆周率</td>
 </tr>
 <tr>
-<td align="center"><code>eps</code></td>
-<td align="center">浮点相对精度，常用于防止0出现在分母上</td>
+<td style="text-align:center"><code>eps</code></td>
+<td style="text-align:center">浮点相对精度，常用于防止0出现在分母上</td>
 </tr>
 <tr>
-<td align="center"><code>inf</code>(<code>Inf</code>)</td>
-<td align="center">无穷大，如$1&#x2F;0$</td>
+<td style="text-align:center"><code>inf</code>(<code>Inf</code>)</td>
+<td style="text-align:center">无穷大，如<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>0</mn></mrow><annotation encoding="application/x-tex">1/0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mord">/</span><span class="mord">0</span></span></span></span></td>
 </tr>
 <tr>
-<td align="center"><code>NaN</code>(<code>nan</code>)</td>
-<td align="center">不定值，如$0&#x2F;0$、$\infty&#x2F;\infty$、$0\times\infty$</td>
+<td style="text-align:center"><code>NaN</code>(<code>nan</code>)</td>
+<td style="text-align:center">不定值，如<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mi mathvariant="normal">/</mi><mn>0</mn></mrow><annotation encoding="application/x-tex">0/0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mord">/</span><span class="mord">0</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty/\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∞</span><span class="mord">/</span><span class="mord">∞</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>×</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">0\times\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span></td>
 </tr>
 <tr>
-<td align="center"><code>i</code>(<code>j</code>)</td>
-<td align="center">复数中的虚数单位</td>
+<td style="text-align:center"><code>i</code>(<code>j</code>)</td>
+<td style="text-align:center">复数中的虚数单位</td>
 </tr>
 <tr>
-<td align="center"><code>realmin</code></td>
-<td align="center">最小正浮点数</td>
+<td style="text-align:center"><code>realmin</code></td>
+<td style="text-align:center">最小正浮点数</td>
 </tr>
 <tr>
-<td align="center"><code>realmax</code></td>
-<td align="center">最大正浮点数</td>
+<td style="text-align:center"><code>realmax</code></td>
+<td style="text-align:center">最大正浮点数</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>ps. 常量可以被赋值，使用命令<code>clear</code>+<code>变量名</code>或重启Matlab可以将常量恢复初始值。</p>
-<hr>
-<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><table>
+<hr />
+<h2 id="数据类型"><a class="markdownIt-Anchor" href="#数据类型"></a> 数据类型</h2>
+<table>
 <thead>
 <tr>
 <th>整型</th>
@@ -2850,7 +2853,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <th>占用空间</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>char</code></td>
 <td>字符型</td>
 <td>1字节</td>
@@ -2890,226 +2894,239 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <td>无符号长整型</td>
 <td>4字节</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>浮点型：</p>
 <ul>
 <li>十进制数形式：由数字和小数点组成</li>
-<li>指数形式：一般形式为 <code>aEn</code>，其中<code>a</code>为10进制数，<code>n</code>为10进制整数，表示$a\times10^n$</li>
-<li>可以分为两类：单精度型和双精度型<ul>
-<li>单精度 <code>float</code>，占4字节，数值范围$3.4\times10^{-38}-3.4\times10^{38}$，最多7位有效数字</li>
-<li>双精度 <code>double</code>，占8字节，数值范围$1.7\times10^{308}-1.7\times10^{308}$，最多16位有效数字</li>
+<li>指数形式：一般形式为 <code>aEn</code>，其中<code>a</code>为10进制数，<code>n</code>为10进制整数，表示<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>×</mo><mn>1</mn><msup><mn>0</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">a\times10^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span></li>
+<li>可以分为两类：单精度型和双精度型
+<ul>
+<li>单精度 <code>float</code>，占4字节，数值范围<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3.4</mn><mo>×</mo><mn>1</mn><msup><mn>0</mn><mrow><mo>−</mo><mn>38</mn></mrow></msup><mo>−</mo><mn>3.4</mn><mo>×</mo><mn>1</mn><msup><mn>0</mn><mn>38</mn></msup></mrow><annotation encoding="application/x-tex">3.4\times10^{-38}-3.4\times10^{38}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">3</span><span class="mord">.</span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">3</span><span class="mord mtight">8</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">3</span><span class="mord">.</span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">8</span></span></span></span></span></span></span></span></span></span></span></span>，最多7位有效数字</li>
+<li>双精度 <code>double</code>，占8字节，数值范围<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.7</mn><mo>×</mo><mn>1</mn><msup><mn>0</mn><mn>308</mn></msup><mo>−</mo><mn>1.7</mn><mo>×</mo><mn>1</mn><msup><mn>0</mn><mn>308</mn></msup></mrow><annotation encoding="application/x-tex">1.7\times10^{308}-1.7\times10^{308}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">.</span><span class="mord">7</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">0</span><span class="mord mtight">8</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">.</span><span class="mord">7</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">0</span><span class="mord mtight">8</span></span></span></span></span></span></span></span></span></span></span></span>，最多16位有效数字</li>
 </ul>
 </li>
 </ul>
 <p>ps. 使用命令<code>format</code>可以控制命令行的输出格式，参考<code>help format</code></p>
-<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nu = <span class="number">123</span>;</span><br><span class="line">st = num2str(nu);  <span class="comment">% &#x27;123&#x27;</span></span><br></pre></td></tr></table></figure>
-
+<h3 id="类型转换"><a class="markdownIt-Anchor" href="#类型转换"></a> 类型转换</h3>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nu = <span class="number">123</span>;</span><br><span class="line">st = num2str(nu);  <span class="comment">% &#x27;123&#x27;</span></span><br></pre></td></tr></table></figure>
 <p>遇到不熟悉的类型转换时，可以使用<code>lookfor</code>指令查找相关函数：</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; lookfor num2</span><br><span class="line"><span class="built_in">num2cell</span>                       - Convert numeric array into cell array.</span><br><span class="line">num2hex                        - Convert singles and doubles to IEEE hexadecimal string format</span><br><span class="line">num2str                        - Convert numbers to character representation</span><br><span class="line">num2ruler                      - Convert numeric array to ruler-appropriate array datatype</span><br><span class="line">enum2val                       - Converts an enumerated string to its numerical equivalent.</span><br><span class="line"><span class="built_in">num2cell</span>                       - Convert numeric codistributed array into cell array</span><br><span class="line">num2str                        - overloaded <span class="keyword">for</span> gpuArrays</span><br><span class="line">num2mstr                       - Convert number to string in maximum precision.</span><br><span class="line">iptnum2ordinal                 - Convert positive integer to ordinal string.</span><br><span class="line">num2ordinal                    - Convert positive integer to ordinal character vector.</span><br><span class="line">signal_num2str                 - Convert the number to a string.</span><br><span class="line">num2goid                       - Converts numbers to Gene Ontology IDs.</span><br><span class="line">num2str                        - Convert numbers to character representation</span><br><span class="line">defnum2                        - Sets Default channel names</span><br><span class="line">num2deriv                      - Numeric two-point network derivative <span class="keyword">function</span>.</span><br><span class="line">num2base                       - Convert stored integers to strings</span><br><span class="line">num2sdec                       - Convert stored integers of array of fi objects to signed decimal representation</span><br><span class="line">num2fixpt                      - Quantize a value using a Fixed-Point Designer representation.</span><br><span class="line">num2alphaheaders               - Generate Alpha headers from a number (usually column).</span><br><span class="line">&gt;&gt; </span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><table>
+<hr />
+<h2 id="运算符"><a class="markdownIt-Anchor" href="#运算符"></a> 运算符</h2>
+<table>
 <thead>
 <tr>
-<th align="center">算数运算符</th>
-<th align="center">定义</th>
+<th style="text-align:center">算数运算符</th>
+<th style="text-align:center">定义</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center"><code>+</code></td>
-<td align="center">算数加</td>
+<tbody>
+<tr>
+<td style="text-align:center"><code>+</code></td>
+<td style="text-align:center">算数加</td>
 </tr>
 <tr>
-<td align="center"><code>-</code></td>
-<td align="center">算数减</td>
+<td style="text-align:center"><code>-</code></td>
+<td style="text-align:center">算数减</td>
 </tr>
 <tr>
-<td align="center"><code>*</code></td>
-<td align="center">算数乘</td>
+<td style="text-align:center"><code>*</code></td>
+<td style="text-align:center">算数乘</td>
 </tr>
 <tr>
-<td align="center"><code>.*</code></td>
-<td align="center">点乘</td>
+<td style="text-align:center"><code>.*</code></td>
+<td style="text-align:center">点乘</td>
 </tr>
 <tr>
-<td align="center"><code>^</code></td>
-<td align="center">算数乘方</td>
+<td style="text-align:center"><code>^</code></td>
+<td style="text-align:center">算数乘方</td>
 </tr>
 <tr>
-<td align="center"><code>.^</code></td>
-<td align="center">点乘方</td>
+<td style="text-align:center"><code>.^</code></td>
+<td style="text-align:center">点乘方</td>
 </tr>
 <tr>
-<td align="center"><code>\</code></td>
-<td align="center">算数左除</td>
+<td style="text-align:center"><code>\</code></td>
+<td style="text-align:center">算数左除</td>
 </tr>
 <tr>
-<td align="center"><code>.\</code></td>
-<td align="center">点左除</td>
+<td style="text-align:center"><code>.\</code></td>
+<td style="text-align:center">点左除</td>
 </tr>
 <tr>
-<td align="center"><code>/</code></td>
-<td align="center">算数右除</td>
+<td style="text-align:center"><code>/</code></td>
+<td style="text-align:center">算数右除</td>
 </tr>
 <tr>
-<td align="center"><code>./</code></td>
-<td align="center">点右除</td>
+<td style="text-align:center"><code>./</code></td>
+<td style="text-align:center">点右除</td>
 </tr>
 <tr>
-<td align="center"><code>&#39;</code></td>
-<td align="center">矩阵共轭<strong>转置</strong></td>
+<td style="text-align:center"><code>'</code></td>
+<td style="text-align:center">矩阵共轭<strong>转置</strong></td>
 </tr>
 <tr>
-<td align="center"><code>.&#39;</code></td>
-<td align="center">矩阵转置，<strong>不求共轭</strong></td>
+<td style="text-align:center"><code>.'</code></td>
+<td style="text-align:center">矩阵转置，<strong>不求共轭</strong></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>其中：</p>
 <ul>
-<li>左除<code>a\b</code>表示$b\div a$，右除<code>a/b</code>表示$a\div b$</li>
-<li><code>A*B</code>表示矩阵乘法，要求矩阵$A$的第二维度与矩阵$B$的第一维度相等，<code>A.*B</code>表示矩阵按位乘法，要求矩阵$A$和矩阵$B$的形状相同，对乘方具有一致要求</li>
-<li><code>A+B</code>要求矩阵$A$和矩阵$B$的形状相同，对算数减有一致要求</li>
-<li><code>A+a</code>表示对矩阵$A$中的每个元素都$+a$，对其他算数运算有一致要求</li>
+<li>左除<code>a\b</code>表示<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>÷</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">b\div a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">a</span></span></span></span>，右除<code>a/b</code>表示<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>÷</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a\div b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span></span></span></span></li>
+<li><code>A*B</code>表示矩阵乘法，要求矩阵<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span>的第二维度与矩阵<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>的第一维度相等，<code>A.*B</code>表示矩阵按位乘法，要求矩阵<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span>和矩阵<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>的形状相同，对乘方具有一致要求</li>
+<li><code>A+B</code>要求矩阵<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span>和矩阵<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>的形状相同，对算数减有一致要求</li>
+<li><code>A+a</code>表示对矩阵<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span>中的每个元素都<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>+</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">+a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord">+</span><span class="mord mathnormal">a</span></span></span></span>，对其他算数运算有一致要求</li>
 </ul>
 <table>
 <thead>
 <tr>
-<th align="center">关系运算符</th>
-<th align="center">定义</th>
+<th style="text-align:center">关系运算符</th>
+<th style="text-align:center">定义</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center"><code>==</code></td>
-<td align="center">等于</td>
+<tbody>
+<tr>
+<td style="text-align:center"><code>==</code></td>
+<td style="text-align:center">等于</td>
 </tr>
 <tr>
-<td align="center"><code>~=</code></td>
-<td align="center">不等于</td>
+<td style="text-align:center"><code>~=</code></td>
+<td style="text-align:center">不等于</td>
 </tr>
 <tr>
-<td align="center"><code>&gt;</code>(<code>&lt;</code>)</td>
-<td align="center">大于&#x2F;小于</td>
+<td style="text-align:center"><code>&gt;</code>(<code>&lt;</code>)</td>
+<td style="text-align:center">大于/小于</td>
 </tr>
 <tr>
-<td align="center"><code>&gt;=</code>(<code>&lt;=</code>)</td>
-<td align="center">大于等于&#x2F;小于等于</td>
+<td style="text-align:center"><code>&gt;=</code>(<code>&lt;=</code>)</td>
+<td style="text-align:center">大于等于/小于等于</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
-<th align="center">逻辑运算符</th>
-<th align="center">定义</th>
+<th style="text-align:center">逻辑运算符</th>
+<th style="text-align:center">定义</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center"><code>&amp;</code></td>
-<td align="center">逻辑与</td>
+<tbody>
+<tr>
+<td style="text-align:center"><code>&amp;</code></td>
+<td style="text-align:center">逻辑与</td>
 </tr>
 <tr>
-<td align="center">&#96;</td>
-<td align="center">&#96;</td>
+<td style="text-align:center">`</td>
+<td style="text-align:center">`</td>
 </tr>
 <tr>
-<td align="center"><code>~</code></td>
-<td align="center">逻辑非</td>
+<td style="text-align:center"><code>~</code></td>
+<td style="text-align:center">逻辑非</td>
 </tr>
 <tr>
-<td align="center"><code>xor</code></td>
-<td align="center">逻辑异或</td>
+<td style="text-align:center"><code>xor</code></td>
+<td style="text-align:center">逻辑异或</td>
 </tr>
 <tr>
-<td align="center"><code>any</code></td>
-<td align="center">有非零元素则为真</td>
+<td style="text-align:center"><code>any</code></td>
+<td style="text-align:center">有非零元素则为真</td>
 </tr>
 <tr>
-<td align="center"><code>all</code></td>
-<td align="center">所有元素均非零则为真</td>
+<td style="text-align:center"><code>all</code></td>
+<td style="text-align:center">所有元素均非零则为真</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>ps. 有关优先级</p>
 <ul>
 <li>算数运算符 &gt; 关系运算符 &gt; 逻辑运算符</li>
 <li>逻辑运算符中，<code>~</code>具有最高优先级，<code>&amp;</code>和<code>|</code>优先级相同</li>
 </ul>
-<hr>
-<h2 id="复数及三角运算函数"><a href="#复数及三角运算函数" class="headerlink" title="复数及三角运算函数"></a>复数及三角运算函数</h2><table>
-<thead>
-<tr>
-<th align="center">复数运算函数</th>
-<th align="center">对应含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>abs(z)</code></td>
-<td align="center">返回绝对值或复数的模</td>
-</tr>
-<tr>
-<td align="center"><code>theta=angle(z)</code></td>
-<td align="center">返回复数的相位，范围$[-\pi,\pi]$</td>
-</tr>
-<tr>
-<td align="center"><code>z=complex(a,b)</code></td>
-<td align="center">返回复数$z&#x3D;a+bi$</td>
-</tr>
-<tr>
-<td align="center"><code>conj(z)</code></td>
-<td align="center">返回复数的共轭</td>
-</tr>
-<tr>
-<td align="center"><code>a=real(z)</code></td>
-<td align="center">返回复数的实部</td>
-</tr>
-<tr>
-<td align="center"><code>b=imag(z)</code></td>
-<td align="center">返回复数的虚部</td>
-</tr>
-<tr>
-<td align="center"><code>isreal(x)</code></td>
-<td align="center">判断矩阵是否含有复数</td>
-</tr>
-<tr>
-<td align="center"><code>unwrap</code></td>
-<td align="center">平移相位角</td>
-</tr>
-<tr>
-<td align="center"><code>cplxpair</code></td>
-<td align="center">将复数排序为复共轭对组</td>
-</tr>
-</tbody></table>
+<hr />
+<h2 id="复数及三角运算函数"><a class="markdownIt-Anchor" href="#复数及三角运算函数"></a> 复数及三角运算函数</h2>
 <table>
 <thead>
 <tr>
-<th align="center">三角运算函数</th>
-<th align="center">对应含义</th>
+<th style="text-align:center">复数运算函数</th>
+<th style="text-align:center">对应含义</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center"><code>sin()</code></td>
-<td align="center">正弦函数</td>
+<tbody>
+<tr>
+<td style="text-align:center"><code>abs(z)</code></td>
+<td style="text-align:center">返回绝对值或复数的模</td>
 </tr>
 <tr>
-<td align="center"><code>cos()</code></td>
-<td align="center">余弦函数</td>
+<td style="text-align:center"><code>theta=angle(z)</code></td>
+<td style="text-align:center">返回复数的相位，范围<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mo>−</mo><mi>π</mi><mo separator="true">,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[-\pi,\pi]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">−</span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span><span class="mclose">]</span></span></span></span></td>
 </tr>
 <tr>
-<td align="center"><code>tan()</code></td>
-<td align="center">正切函数</td>
+<td style="text-align:center"><code>z=complex(a,b)</code></td>
+<td style="text-align:center">返回复数<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">z=a+bi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span><span class="mord mathnormal">i</span></span></span></span></td>
 </tr>
 <tr>
-<td align="center"><code>cot()</code></td>
-<td align="center">余切函数</td>
+<td style="text-align:center"><code>conj(z)</code></td>
+<td style="text-align:center">返回复数的共轭</td>
 </tr>
 <tr>
-<td align="center"><code>sec()</code></td>
-<td align="center">正割函数</td>
+<td style="text-align:center"><code>a=real(z)</code></td>
+<td style="text-align:center">返回复数的实部</td>
 </tr>
 <tr>
-<td align="center"><code>csc()</code></td>
-<td align="center">余割函数</td>
+<td style="text-align:center"><code>b=imag(z)</code></td>
+<td style="text-align:center">返回复数的虚部</td>
 </tr>
-</tbody></table>
-<p>ps. 反三角函数&#x3D;<code>a</code>+<code>三角函数</code>，如反正弦为<code>asin()</code></p>
+<tr>
+<td style="text-align:center"><code>isreal(x)</code></td>
+<td style="text-align:center">判断矩阵是否含有复数</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>unwrap</code></td>
+<td style="text-align:center">平移相位角</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>cplxpair</code></td>
+<td style="text-align:center">将复数排序为复共轭对组</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">三角运算函数</th>
+<th style="text-align:center">对应含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>sin()</code></td>
+<td style="text-align:center">正弦函数</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>cos()</code></td>
+<td style="text-align:center">余弦函数</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>tan()</code></td>
+<td style="text-align:center">正切函数</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>cot()</code></td>
+<td style="text-align:center">余切函数</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>sec()</code></td>
+<td style="text-align:center">正割函数</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>csc()</code></td>
+<td style="text-align:center">余割函数</td>
+</tr>
+</tbody>
+</table>
+<p>ps. 反三角函数=<code>a</code>+<code>三角函数</code>，如反正弦为<code>asin()</code></p>
 
   </div>
   
@@ -3244,12 +3261,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Matlab向量与多项式</p>
           <p class='content'>Matlab系列基础教程2-向量与多项式，包括向量的生成与运算、多项式的生成与运算。
 
-
-
-
-
-
-向量是由$n$个数$a_1,a_2,\cdots,a_n$组成的有序数组，记成$a&#x3D;\...</p>
+向量是由nnn个数a1,a2,⋯ ,ana_1,a_2,\cdots,a_na1​,a2​,⋯,an​组成...</p>
         </a>
       
       
@@ -3257,14 +3269,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <p class='title'>Matlab命令行<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>Matlab系列基础教程0-命令行常用指令
 
+ 常用指令
 
-
-
-常用指令
 
 
 指令含义
 指令
+
 
 
 
@@ -3435,7 +3446,7 @@ who
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E9%87%8F"><span class="toc-text">常量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="toc-text">类型转换</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E6%95%B0%E5%8F%8A%E4%B8%89%E8%A7%92%E8%BF%90%E7%AE%97%E5%87%BD%E6%95%B0"><span class="toc-text">复数及三角运算函数</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E9%87%8F"><span class="toc-text"> 常量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text"> 数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="toc-text"> 类型转换</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text"> 运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E6%95%B0%E5%8F%8A%E4%B8%89%E8%A7%92%E8%BF%90%E7%AE%97%E5%87%BD%E6%95%B0"><span class="toc-text"> 复数及三角运算函数</span></a></li></ol>
     </div>
   </section>
 
@@ -3522,7 +3533,7 @@ who
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © 2019-2022 cucpyx</a></p>
+        <p><a href="/">Copyright © 2019-2024 cnicpyx</a></p>
 
         </div>
       
@@ -3531,6 +3542,15 @@ who
     
     <!-- Custom Files footer end-->
   </footer>
+
+
+
+  <script src='https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
+    }
+  </script>
 
 
         <a id="s-top" class="fa-solid fa-arrow-up fa-fw" href="/" onclick="return false;" title="top"></a>
@@ -4170,7 +4190,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_7.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_55.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_56.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_10.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_23.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_49.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_38.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_16.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_8.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_54.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_51.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_41.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_57.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_40.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_4.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_19.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_20.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_43.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_36.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_42.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_45.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_17.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_34.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_13.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_29.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_37.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_18.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_5.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_3.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_31.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_12.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_14.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_47.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_50.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_53.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_28.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_6.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_32.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_39.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_9.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_15.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_30.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_48.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_25.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_52.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_33.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_11.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_35.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_21.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_26.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_24.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_27.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_22.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_44.jpg"];
+  let imgs = ["https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_31.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_49.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_21.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_48.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_35.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_11.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_56.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_55.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_13.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_17.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_45.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_29.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_32.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_57.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_22.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_6.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_51.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_24.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_44.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_16.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_12.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_4.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_39.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_33.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_30.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_19.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_52.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_28.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_10.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_53.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_54.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_7.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_5.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_37.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_50.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_9.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_42.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_8.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_14.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_36.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_23.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_27.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_34.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_40.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_26.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_38.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_41.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_43.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_18.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_47.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_15.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_20.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_25.jpg","https://img-1306037672.cos.ap-beijing.myqcloud.com/bg_3.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
